@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html  lang="es"  class="scroll-smooth" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+
+        @keyframes gradient-bg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-bg {
+            background: linear-gradient(-45deg, #020617, #1e1b4b, #0f172a, #1e1b4b);
+            background-size: 400% 400%;
+            animation: gradient-bg 12s ease infinite;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            border-color: rgba(99, 102, 241, 0.4);
+            background: rgba(255, 255, 255, 0.07);
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="animated-bg text-slate-200 min-h-screen font-sans">
+
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        
+            <span class="text-xl font-black tracking-tighter text-white">PORT<span class="text-indigo-400">AFOLIO</span></span>
+            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#inicio" class="hover:text-indigo-400 transition">Inicio</a>
+                <a href="#sobre-mi" class="hover:text-indigo-400 transition">Sobre Mí</a>
+                <a href="#tecnologias y servicios"class="hover:text-indigo-400 transition">tecnologias y servicios</a>
+                <a href="#proyectos" class="hover:text-indigo-400 transition">Proyectos</a>
+                <a href="#testimonios" class="hover:text-indigo-400 transition">Opiniones</a>
+                <a href="#contacto" class="hover:text-indigo-400 transition">Contacto</a>
+            </div>
+        </div>
+    
+    </nav>
+
+    <header id="inicio" class="pt-40 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-black text-white mb-4">Melany Tesillo</h1>
+                <h2 class="text-2xl md:text-3xl font-bold text-indigo-400 mb-6">Desarrolladora Frontend</h2>
+                <p class="text-lg text-slate-400 mb-8 max-w-lg">Diseños de calidad, alta funcinalidad y responsividad,enfocadas en brindar una excelente experiencia de usuario.</p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#contacto" class="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3 rounded-xl font-bold transition shadow-lg shadow-indigo-500/20">Contacto</a>
+                    <a href="#proyectos" class="glass px-8 py-3 rounded-xl font-bold hover:bg-white/10 transition">Proyectos</a>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="absolute -inset-1 bg-indigo-500 rounded-full blur opacity-25 group-hover:opacity-50 transition"></div>
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/10 relative z-10">
+                    <img src="/imgenes/image.png" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre-mi" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto glass p-10 md:p-16 rounded-[40px] flex flex-col md:flex-row gap-12 items-center">
+            <div class="md:w-1/3 text-6xl text-indigo-500 opacity-20 font-black">SOBRE<br>MI</div>
+             <div class="md:w-2/3">
+                   <h3 class="text-3xl font-bold text-center text-white mb-6">Apasionada por la tecnología y el diseño</h3>
+                   <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                     Soy desarrolladora frontend apasionada por la creación de páginas web modernas, funcionales y visualmente atractivas. Me enfoco en transformar ideas en experiencias digitales intuitivas, utilizando buenas prácticas de diseño, rendimiento y usabilidad.
+                     Me gusta trabajar en el diseño de interfaces limpias, responsivas y optimizadas para diferentes dispositivos, garantizando una excelente experiencia para el usuario final.                </p>
+                   <h3 class="text-3xl font-bold text-center text-white mb-6">Habilidades tecnicas</h3>
+                   <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                     Desarrollo de interfaces web modernas y funcionales, diseño responsive para diferentes dispositivos, 
+                     maquetación web profesional, optimización visual y de rendimiento, integración de interfaces con backend, aplicación de principios básicos de UX/UI y  cosas basicas de manejo de gestores de contenido como WordPress para la creación y personalización de sitios web.             </p>
+                
+                
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologias y servicios" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto glass p-10 md:p-16 rounded-[40px] flex flex-col md:flex-row gap-12 items-center">
+            <div class="md:w-1/3 text-5xl text-indigo-500 opacity-20 font-black">TECNOLOGIAS<br>Y SERVICIOS</div>
+               <div class="md:w-2/3">
+                  <h3 class="text-3xl font-bold text-center text-white mb-5">Tecnologias</h3>
+
+
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                      <div class="glass p-4 rounded-xl text-center"><i class="fab fa-html5 text-2xl text-cyan-400 mb-2 "></i><p class="text-xs uppercase">Html</p></div>
+                      <div class="glass p-4 rounded-xl text-center"><i class="fab fa-css3-alt text-2xl text-blue-400 mb-2"></i><p class="text-xs uppercase">Css</p></div>
+                      <div class="glass p-4 rounded-xl text-center"><i class="fab fa-js text-2xl text-cyan-400 mb-2"></i><p class="text-xs uppercase">JavaScript</p></div>
+                      <div class="glass p-4 rounded-xl text-center"><i class="fab fa-git text-2xl text-cyan-400 mb-2"></i><p class="text-xs uppercase">Git</p></div>
+                      <div class="glass p-4 rounded-xl text-center"><i class="fab fa-react text-2xl text-cyan-400 mb-2"></i><p class="text-xs uppercase">React</p></div>
+                      <div class="glass p-4 rounded-xl text-center"><i class="fab fa-css3-alt text-2xl text-cyan-400 mb-2"></i><p class="text-xs uppercase">Tailwind CSS</p></div>
+                      <div class="glass p-4 rounded-xl text-center"><i class="fab fa-figma text-2xl text-pink-400 mb-2"></i><p class="text-xs uppercase">Figma</p></div>
+                      <div class="glass p-4 rounded-xl text-center"><i class="fab fa-github text-2xl text-blue-400 mb-2"></i><p class="text-xs uppercase">Git hub</p></div>
+                    
+
+                    </div>
+                
+                   <br>
+                  
+                   <h3 class="text-3xl font-bold text-center text-white mb-6">Servicios</h3>
+
+                   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div class="text-center p-6 flex flex-col items-center">
+                          <i class="fas fa-rocket text-4xl text-blue-500"></i>
+                          <h3 class="text-xl font-bold mt-3 text-white">Desarrollo de Landing Pages</h3>
+                           <p class="text-gray-300 mt-2">
+                             Creo páginas web modernas, atractivas y optimizadas para conversión.
+                           </p> 
+                       </div>
+
+                       <div class="text-center p-6 flex flex-col items-center">
+                            <i class="fas fa-mobile-alt text-4xl text-blue-500"></i>
+                            <h3 class="text-xl font-bold mt-3 text-white">Diseño Web Responsive</h3>
+                            <p class="text-gray-300 mt-2">
+                             Sitios adaptables a móviles, tablets y escritorio con experiencia fluida.
+                            </p>
+                       </div>
+
+                       <div class="text-center p-6 flex flex-col items-center">
+                           <i class="fas fa-cogs text-4xl text-blue-500"></i>
+                           <h3 class="text-xl font-bold mt-3 text-white">Personalización en WordPress</h3>
+                           <p class="text-gray-300 mt-2">
+                             Desarrollo y edición de sitios en WordPress con Divi.
+                          </p>
+                        </div>
+
+                    </div>
+
+                    
+                    
+
+                </div>
+                    
+
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="proyectos" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-black text-white text-center mb-16">Proyectos Destacados</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="glass rounded-3xl overflow-hidden group card-hover transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="imgenes/CINE.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-indigo-600/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            
+                            <a href="https://the-end-1-vfhx.onrender.com/" target="_blank" class="bg-blue-500 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-600 transition">Visitar Sitio</a>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">the-end </h3>
+                        <h3 class="text-1xl font-bold text-white mb-2">Sistema de Gestión de Cines </h3>
+
+                        <p class="text-slate-400 mb-4">THE-END es una aplicación web full-stack diseñada para gestionar todas las operaciones de un cine: cartelera de películas, funciones, asignación de asientos y venta de tiquetes. El sistema implementa tres roles diferenciados — administrador, operario y cliente — cada uno con una experiencia y permisos adaptados a sus necesidades.</p>
+                         <h3 class="text-1xl font-bold text-white mb-2">Stack </h3>
+
+                        <div class="flex gap-2">
+                             
+                            <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase">nodejs</span>
+                            <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase">react</span>
+                            <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase">PostgreSQL(supabase)</span>
+                            <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase">render</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass rounded-3xl overflow-hidden group card-hover transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="imgenes/manjaresdelcampo.png" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-purple-600/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <a href="https://manjares-campo.vercel.app/" target="_blank" class="bg-blue-500 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-600 transition">Visitar Sitio</a>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Manjares Del campo</h3>
+                        <p class="text-slate-400 mb-4">Manjares del Campo es un e-commerce especializado en productos agrícolas 100% naturales, diseñado para conectar productores del campo con clientes finales de forma simple y accesible. El flujo de compra está adaptado al contexto real del negocio: los pedidos se realizan a través de WhatsApp, y el administrador gestiona el ciclo completo del pedido — de realizado a pagado, enviado y entregado — con envío automático de factura al confirmar el pago.
+                          El panel de administración incluye un dashboard con gráficas de productos más vendidos, alertas automáticas de stock agotándose, gestión de productos y categorías, e inventario completo. Se construyo el backend con Django y la interfaz con HTML, CSS y JavaScript vanilla.</p>
+                        <h3 class="text-1xl font-bold text-white mb-2">Stack </h3>
+
+                          <div class="flex gap-2">
+                            <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase">HTML</span>
+                            <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase">CSS</span>
+                            <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase">JavaScript-vanilla</span>
+                            <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase">SQLite</span>
+                            <span class="text-[10px] px-3 py-1 bg-white/5 rounded-full border border-white/10 uppercase">pythonanywhere</span>
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-24 px-6 bg-white/5">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-black text-white text-center mb-16">Lo que dicen los clientes</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-3xl italic relative">
+                    <i class="fas fa-quote-left text-indigo-500 text-3xl mb-4 opacity-50"></i>
+                    <p class="text-slate-300 mb-6">" superó nuestras expectativas. Su atención al detalle en el frontend es de otro nivel."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-indigo-500 rounded-full"></div>
+                        <span class="font-bold text-white">Carlos Ruiz</span>
+                    </div>
+                </div>
+                <div class="glass p-8 rounded-3xl italic relative border-t-2 border-indigo-500">
+                    <i class="fas fa-quote-left text-indigo-500 text-3xl mb-4 opacity-50"></i>
+                    <p class="text-slate-300 mb-6">"El portafolio que diseñó para nosotros aumentó nuestra tasa de conversión en un 40%."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-purple-500 rounded-full"></div>
+                        <span class="font-bold text-white">Ana Milena</span>
+                    </div>
+                </div>
+                <div class="glass p-8 rounded-3xl italic relative">
+                    <i class="fas fa-quote-left text-indigo-500 text-3xl mb-4 opacity-50"></i>
+                    <p class="text-slate-300 mb-6">"Rápida, profesional y con un gusto estético impecable. Altamente recomendada."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-emerald-500 rounded-full"></div>
+                        <span class="font-bold text-white">Juan Pérez </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto glass p-10 md:p-16 rounded-[40px] shadow-2xl">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-black text-white mb-4">¿Hablamos de tu proyecto?</h2>
+                <p class="text-slate-400">Completa el formulario y te responderé en menos de 24 horas.</p>
+            </div>
+            <form action="https://formspree.io/f/mgodqrkn" method="POST" class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+        <input type="text" name="nombre" placeholder="Nombre completo" required
+            class="w-full bg-white/5 border border-white/10 p-4 rounded-xl focus:border-indigo-500 outline-none transition">
+        
+        <input type="email" name="email" placeholder="Correo electrónico" required
+            class="w-full bg-white/5 border border-white/10 p-4 rounded-xl focus:border-indigo-500 outline-none transition">
+        
+        
+      
+    </div>
+
+    <div class="space-y-4">
+        <textarea name="mensaje" placeholder="Tu mensaje..." rows="4" required
+            class="w-full bg-white/5 border border-white/10 p-4 rounded-xl focus:border-indigo-500 outline-none transition"></textarea>
+        
+        <button type="submit" 
+            class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded-xl transition shadow-xl shadow-indigo-500/30">
+            Enviar Mensaje
+        </button>
+    </div>
+      <div class="flex gap-4 pt-4">
+            <a href="https://github.com/mptse" target="_blank" class="text-2xl text-slate-400 hover:text-white transition"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/TU_PERFIL" target="_blank" class="text-2xl text-slate-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+            <h3>melanitesillo@gmail.com</h3>
+        
+        </div>
+        
+        
+
+</form>
+        </div>
+    </section>
+
+
+     <section id="cv" class="py-24 px-6 text-center">
+        
+    
+     <h2 class="text-4xl font-black text-white mb-4">Hoja de Vida</h2>
+
+      <p class="text-slate-300 mb-6">
+         Puedes ver o descargar mi hoja de vida en formato PDF para conocer más sobre mi perfil profesional.
+     </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+    
+           <a href="doc/CV.pdf" target="_blank"
+             class="bg-slate-700 text-white px-6 py-2 rounded-lg hover:bg-slate-600 transition">
+             Ver CV
+           </a>
+
+            <a href="doc/CV.pdf" download
+              class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-400 transition">
+              Descargar CV
+           </a>
+
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="text-slate-500 text-sm tracking-widest uppercase">
+            &copy; 2026 MELANY TESILLO. Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>
